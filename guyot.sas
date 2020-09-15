@@ -1,14 +1,27 @@
 /* NOTES:
-
-This code is from 
-
-    CHANGES FROM ORIGINAL:
-        - removed write_path variables and actions
-    
-    FINISH UP:
-        header for this file
-        readme.md file with examples
-
+    guyot.sas
+        Purpose:
+            Create individual level dataset from coordinate of a Kaplan-Meier curve
+        Method:
+            Proposed by Guyot, Patricia et al (2012)
+        Requirements:
+            This code runs in SAS and requires SAS/IML and SAS/STAT version 14.2 or later
+        Origin:
+            This code is from https://github.com/statmike/Guyot-SAS
+            Author: Mike Henderson
+        Basis:
+            This code is based on R code implemenation found at: https://rdrr.io/github/certara/survivalnma/src/R/guyot.R
+            Each section of the code below has a reference to line numbers of the parallel section of the R code
+        Example:
+            see the end of this code for an example with simulated data that can be compared to the basis
+        Collaborate:
+            Make a PULL request to the Origin
+        Issues:
+            If you find mistakes or add improvements please use the issues tracker at the code origin to propose changes: https://github.com/statmike/Guyot-SAS
+        Reference:
+            Guyot, P., Ades, A., Ouwens, M.J. et al. Enhanced secondary analysis of survival data: reconstructing the data from published Kaplan-Meier survival curves. BMC Med Res Methodol 12, 9 (2012). https://doi.org/10.1186/1471-2288-12-9
+        Validation:
+            A series of code checks are under construction for this work.  The author seeks a third party to assist in an unbiased validation of the code.
 */
 
 proc iml;
