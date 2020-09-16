@@ -10,19 +10,19 @@
 The code in [guyot.sas](guyot.sas) implements the methods described here.
 
 ### Inputs
-- x is a vector of x coordinate taken from a Kaplan-Meier curve
-- y is a vector of y coordinate taken from a Kaplan-Meier curve
-- t is a vector of timepoints where the number at risk is reported
-- r is a vector of the number at risk for each timepoint in `t`
-- tot_events is the total number of events reported (optional)
+- `x` is a vector of x coordinates taken from a Kaplan-Meier curve
+- `y` is a vector of y coordinates taken from a Kaplan-Meier curve
+- `t` is a vector of timepoints `t` where the number at risk is reported
+- `r` is a vector of the number at risk for each timepoint in `t`
+- `tot_events` is the total number of events reported (optional)
 
 ### Outputs
 The `guyot_method` module returns a matrix of individual data in rows.  The two columns are `time` and `event`.
 
 ## Requirements
-The code requiers an installation of SAS software with the [SAS/STAT (PROC LIFETEST)](https://documentation.sas.com/?docsetId=statug&docsetTarget=statug_lifetest_overview.htm&docsetVersion=15.2&locale=en) and [SAS/IML (PROC IML)](https://documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_imlstart_sect001.htm&docsetVersion=15.2&locale=en) packages, version 14.2 or higher.  
+Theis code requiers an installation of SAS software with the [SAS/STAT (PROC LIFETEST)](https://documentation.sas.com/?docsetId=statug&docsetTarget=statug_lifetest_overview.htm&docsetVersion=15.2&locale=en) and [SAS/IML (PROC IML)](https://documentation.sas.com/?docsetId=imlug&docsetTarget=imlug_imlstart_sect001.htm&docsetVersion=15.2&locale=en) packages, version 14.2 or higher.  
 
-If you do not have a SAS license and review these methods for educational purposes, check out the free educational offering from SAS [here](https://www.sas.com/en_us/software/university-edition/download-software.html).  This free offering includes the required packages.
+If you do not have a SAS license and want to review these methods for educational purposes, check out the free learning offering from SAS [here](https://www.sas.com/en_us/software/university-edition/download-software.html).  This free offering includes the required packages.
 
 ## Method
 Guyot, P., Ades, A., Ouwens, M.J. et al. Enhanced secondary analysis of survival data: reconstructing the data from published Kaplan-Meier survival curves. BMC Med Res Methodol 12, 9 (2012). https://doi.org/10.1186/1471-2288-12-9
