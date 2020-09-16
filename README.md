@@ -2,7 +2,7 @@
 
 ---
 
-# Reconstructing individual-level data from published Kaplan-Meier survival curves using the method proposed by Guyot, Patricia et al. (2012)
+# Reconstructing individual-level data from published Kaplan-Meier survival curves using the method proposed by Guyot, Patricia et al.
 
 ---
 
